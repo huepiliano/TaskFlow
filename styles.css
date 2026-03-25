@@ -1,0 +1,161 @@
+/* Reset */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+/* Body */
+body{
+    font-family:'Poppins', sans-serif;
+    background:#f5f7fb;
+    color:#1f2937;
+    min-height:100vh;
+    padding:60px 20px;
+}
+
+/* Container */
+.app-container{
+    max-width:700px;
+    margin:auto;
+}
+
+/* Título */
+h1{
+    text-align:center;
+    margin-bottom:40px;
+    color:#2563eb;
+}
+
+/* Formulario */
+form{
+    display:flex;
+    justify-content:center;
+    gap:10px;
+    margin-bottom:30px;
+}
+
+/* Input */
+input{
+    padding:12px;
+    border:1px solid #d1d5db;
+    border-radius:8px;
+    width:250px;
+}
+
+input:focus{
+    outline:none;
+    border-color:#2563eb;
+}
+
+/* Botón principal */
+form button{
+    background:#2563eb;
+    color:white;
+    border:none;
+    padding:12px 16px;
+    border-radius:8px;
+    cursor:pointer;
+    font-weight:600;
+}
+
+form button:hover{
+    background:#1d4ed8;
+}
+
+/* Lista */
+ul{
+    list-style:none;
+}
+
+/* Tarjetas */
+li{
+    background:white;
+    padding:15px;
+    margin-bottom:15px;
+    border-radius:12px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    box-shadow:0 6px 20px rgba(0,0,0,0.06);
+    transition:all 0.2s ease;
+    border-left:5px solid #2563eb;
+    gap:10px;
+}
+
+/* Hover */
+li:hover{
+    transform:translateY(-4px);
+    box-shadow:0 10px 25px rgba(0,0,0,0.1);
+}
+
+/* Info */
+li div:first-child{
+    display:flex;
+    flex-direction:column;
+}
+
+/* Acciones */
+li div:last-child{
+    display:flex;
+    gap:8px;
+}
+
+/* Texto */
+span strong{
+    font-size:14px;
+}
+
+small{
+    color:#6b7280;
+    font-size:12px;
+}
+
+/* Badge estado */
+.estado{
+    margin-top:5px;
+    padding:4px 8px;
+    border-radius:6px;
+    font-size:12px;
+    font-weight:600;
+    width:fit-content;
+}
+
+.pendiente{
+    background:#facc15;
+    color:#92400e;
+}
+
+.completada{
+    background:#22c55e;
+    color:white;
+}
+
+/* Botones */
+li button{
+    padding:6px 10px;
+    border:none;
+    border-radius:6px;
+    cursor:pointer;
+    font-size:12px;
+}
+
+/* Cambiar */
+li button:first-child{
+    background:#22c55e;
+    color:white;
+}
+
+li button:first-child:hover{
+    background:#16a34a;
+}
+
+/* Eliminar */
+li button:last-child{
+    background:#ef4444;
+    color:white;
+}
+
+li button:last-child:hover{
+    background:#dc2626;
+}
